@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# TUI front-end for scripts/demo/run-demo-setup.sh — build a demo scratch org.
+set -euo pipefail
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/tui/_bootstrap.sh"
+_demo_tui_launch scripts.demo.tui.setup_app "$@"
